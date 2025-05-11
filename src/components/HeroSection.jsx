@@ -1,16 +1,16 @@
 import React from "react";
-import { HERO_CONTENT } from "../constants/index";
+import { BRAND_LOGOS, HERO_CONTENT } from "../constants/index";
 const HeroSection = () => {
   return (
-    <section className="text-neutral-200 pt-28 lg:pt-36">
+    <section className="text-neutral-200 pt-28 lg:pt-36  h-screen relative z-2">
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center text-center h-36">
-        <div className="text-sm mb-8 border-neutral-900 border-2 px-3 py-2 rounded-full ">
+        <div className="text-sm mb-4 border-slate-900 bg-slate-900/70 border-2 px-3 py-2 rounded-full ">
           {HERO_CONTENT.badgeText}
         </div>
-        <h1 className="text-5xl md:text-8xl my-4 font-semibold tracking-tighter bg-gradient-to-b from-indigo-50 via-indigo-100 to-indigo-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl mt-12 md:mt-0 md:text-8xl my-4 font-semibold tracking-tighter bg-gradient-to-b from-indigo-50 via-indigo-200 to-gray-800 bg-clip-text text-transparent">
           The Ultimate <br /> Streaming Toolkit++
         </h1>
-        <p className="mt-6 text-neutral-500 font-semibold max-w-2xl  text-xs md:text-sm ">
+        <p className="mt-6  text-neutral-500 font-semibold max-w-2xl  text-xs md:text-sm ">
           {HERO_CONTENT.subHeading}
         </p>
         <div className="mt-6 space-x-4">
@@ -20,9 +20,18 @@ const HeroSection = () => {
               {HERO_CONTENT.callToAction.primary}
             </span>
           </button>
-          <a href="#" className="border py-3 px-6 rounded-full text-neutral-200">
+          <a
+            href="#"
+            className="border  py-3 px-6 rounded-full text-neutral-100 bg-gradient-to-b from-gray-950 via-slate-950 to-slate-700"
+          >
             {HERO_CONTENT.callToAction.secondary}
           </a>
+        </div>
+        {/* brands */}
+        <div className="flex mt-20 flex-wrap justify-center gap-6">
+            {BRAND_LOGOS.map((logo,index)=>(
+                <img src={logo.src} key={index} alt={logo.alt} className="h-8" />
+            ))}
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <nav className="fixed top-4 left-0 right-0 z-100 m-2 ">
-      <div className="text-neutral-100 bg-black/60 backdrop-blur-md max-w-7xl mx-auto px-4 py-3 flex justify-between items-center rounded-xl border-1 border-neutral-800">
+      <div className="text-neutral-100 bg-slate-900/60 backdrop-blur-md max-w-7xl mx-auto px-4 py-3 flex justify-between items-center rounded-xl border-1 border-neutral-800">
         {/* logo */}
         <img src={logo} alt="logo" width={120} />
 
@@ -34,13 +34,13 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="border border-neutral-600 text-neutral-200 py-1 px-4 rounded-lg hover:bg-green-800  transition "
+            className="border border-neutral-800 text-neutral-200 py-1 px-4 rounded-lg hover:bg-slate-900  transition "
           >
             Get a Demo
           </a>
           <a
             href="#"
-            className="bg-indigo-600 text-neutral-200 py-1 px-4 rounded-lg border border-black hover:bg-black hover:border hover:border-indigo-900 transition "
+            className="bg-gradient-to-tl from-yellow-400 via-green-400 to-green-600 text-slate-900 font-semibold py-1 px-4 rounded-lg border border-black hover:bg-black hover:border transition "
           >
             Start Free Trial
           </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-neutral-950/70 backdrop-blur-lg border-1 border-neutral-600 p-4 rounded-xl mt-2 text-neutral-400">
+        <div className="md:hidden bg-slate-950/70 backdrop-blur-lg border-1 border-neutral-800 p-4 rounded-xl mt-2 text-neutral-400">
           <div className="flex flex-col space-y-4">
             <a href="#works" className="hover:text-neutral-200">
               How it works
@@ -82,7 +82,7 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="bg-blue-800 text-white py-1 px-4 rounded-lg border border-black hover:bg-black hover:border hover:border-blue-800 transition w-full"
+                className="bg-gradient-to-tl from-yellow-400 via-green-400 to-green-600 text-slate-900 py-1 px-4 rounded-lg transition font-semibold w-full"
               >
                 Start Free Trial
               </a>
