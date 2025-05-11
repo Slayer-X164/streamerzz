@@ -1,3 +1,5 @@
+import React from "react";
+
 import StreamLabsLogo from "../assets/streamlabs-logo.png";
 import BroadcastlyLogo from "../assets/broadcastly-logo.png";
 import LiveStreamerLogo from "../assets/livestreamer-logo.png";
